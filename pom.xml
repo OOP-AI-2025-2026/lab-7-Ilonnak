@@ -9,10 +9,10 @@
     <version>1.0-SNAPSHOT</version>
 
     <properties>
-        <!-- Таргетимо Java 17, щоб GitHub CI зібрав -->
         <maven.compiler.release>17</maven.compiler.release>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <javafx.version>23.0.1</javafx.version>
+
+        <javafx.version>17.0.12</javafx.version>
     </properties>
 
     <dependencies>
@@ -30,7 +30,6 @@
 
     <build>
         <plugins>
-            <!-- Явно фіксуємо release=17 для CI -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
